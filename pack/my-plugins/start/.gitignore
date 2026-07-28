@@ -1,0 +1,5 @@
+*
+!.gitignore
+!fcitx.vim
+!vim-wayland-clipboard
+!termux-clipboard

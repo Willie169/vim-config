@@ -1,0 +1,15 @@
+[submodule "pack/my-plugins/start/fcitx.vim"]
+	path = pack/my-plugins/start/fcitx.vim
+	url = https://github.com/lilydjwg/fcitx.vim
+[submodule "pack/my-plugins/start/lightline.vim"]
+	path = pack/my-plugins/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/my-plugins/start/termux-clipboard"]
+	path = pack/my-plugins/start/termux-clipboard
+	url = https://github.com/Willie169/termux-clipboard
+[submodule "pack/my-plugins/start/vim-fugitive"]
+	path = pack/my-plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/my-plugins/start/vim-wayland-clipboard"]
+	path = pack/my-plugins/start/vim-wayland-clipboard
+	url = https://github.com/jasonccox/vim-wayland-clipboard
