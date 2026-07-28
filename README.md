@@ -5,20 +5,13 @@ My configuration for Vim 8.0 or later, which is derived from [my fork](https://g
 ### Installation
 
 ```
-git clone --recurse-submodules --depth=1 https://github.com/Willie169/vim-config.git ~/.vim_runtime
-sh ~/.vim_runtime/install.sh
+curl -fsSL https://raw.githubusercontent.com/Willie169/vim-config/refs/heads/main/install.sh | sh
 ```
 
 ### Update
 
 ```
-cd ~/.vim_runtime
-git reset --hard
-git submodule deinit --all --force
-git pull --rebase
-git submodule sync --recursive
-git submodule update --init --remote --recursive
-git clean -fd
+sh ~/.vim_runtime/update.sh
 ```
 
 ### Customization
