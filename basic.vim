@@ -15,10 +15,6 @@ set history=500
 filetype plugin on
 filetype indent on
 
-" Set to auto read when a file is changed from the outside
-set autoread
-au FocusGained,BufEnter * silent! checktime
-
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -228,6 +224,13 @@ endtry
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
+""""""""""""""""""""""""""""""
+" => Status line
+""""""""""""""""""""""""""""""
+" Always show the status line
+set laststatus=2
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -276,7 +279,7 @@ map <leader>s? z=
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Quickly open a buffer for scribble
 map <leader>q :e ~/buffer<cr>
