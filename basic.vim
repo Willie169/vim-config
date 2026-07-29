@@ -130,8 +130,8 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Clipboard
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Let yanks/deletes go to both internal default register and system clipboard
-set clipboard=unnamedplus,unnamed
+" Sync with system clipboard
+set clipboard=unnamedplus
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
