@@ -4,7 +4,9 @@ My configuration for Vim 8.0 or later, which is derived from [my fork](https://g
 
 ### Installation
 
+Bakcup your configurations first. And then clean up existing installation of vimrc or vim-config and install:
 ```
+rm rf ~/.vim_runtime
 curl -fsSL https://raw.githubusercontent.com/Willie169/vim-config/refs/heads/main/install.sh | sh
 ```
 
