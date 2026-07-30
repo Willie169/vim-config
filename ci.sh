@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+dir="$(cd -- "$(dirname -- "$0")" && pwd)"
+for f in "$dir"/*.sh; do
+	chmod +x "$f"
+	shfmt -w "$f"
+	shellcheck "$f"
+done
