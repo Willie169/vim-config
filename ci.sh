@@ -6,3 +6,4 @@ for f in "$dir"/*.sh; do
 	shfmt -w "$f"
 	shellcheck "$f"
 done
+nvim "$dir"/basic.vim --headless "gg=G" +wq
