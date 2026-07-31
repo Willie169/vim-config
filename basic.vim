@@ -171,7 +171,10 @@ set si "Smart indent
 set wrap "Wrap lines
 
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
+map <leader>sp :setlocal paste!<cr>
+
+nnoremap oo o<Esc>
+nnoremap op o<Esc>p
 
 
 """"""""""""""""""""""""""""""
@@ -181,6 +184,8 @@ map <leader>pp :setlocal paste!<cr>
 " Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
+xnoremap <leader>p "_dP
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
