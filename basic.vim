@@ -332,8 +332,8 @@ endfunction
 " => Folding
 " [1] https://gist.github.com/lestoni/8c74da455cce3d36eb68
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>m zM
 nmap <leader>r zR
-nmap <leader>o zO
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
