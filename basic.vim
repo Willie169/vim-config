@@ -149,7 +149,7 @@ function! ToggleMouse()
         set mouse=a
     endif
 endfunction
-nnoremap <silent> <leader>k :call ToggleMouse
+nnoremap <silent> <leader>k :call ToggleMouse()<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
