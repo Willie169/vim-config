@@ -29,15 +29,22 @@ function! s:SudoWrite(filename) abort
         echoerr 'E499: Empty file name'
         return 0
     endif
-    if system('sudo -v') !=# ''
+
+    " Let sudo ask for the password through the terminal.
+    execute '!sudo -v'
+    if v:shell_error != 0
         echoerr 'sudo authentication failed'
         return 0
     endif
-    execute 'silent write !sudo tee ' . shellescape(a:filename) . ' >/dev/null'
+
+    " The sudo timestamp is now valid, so stdin can safely be the buffer.
+    execute 'silent write !sudo -n tee ' . shellescape(a:filename) . ' >/dev/null'
+
     if v:shell_error != 0
         echoerr 'sudo write failed'
         return 0
     endif
+
     set nomodified
     return 1
 endfunction
