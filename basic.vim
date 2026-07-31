@@ -24,8 +24,8 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-command! W :w !sudo tee "%" > /dev/null <bar> edit!
-command! Wq :w !sudo tee "%" > /dev/null <bar> if v:shell_error == 0 <bar> edit! <bar> q <bar> endif
+command! -nargs=? W execute 'write !sudo tee ' . shellescape(empty(<q-args>) ? expand('%:p') : <q-args>) . ' > /dev/null' <bar> edit!
+command! -nargs=? Wq execute 'write !sudo tee ' . shellescape(empty(<q-args>) ? expand('%:p') : <q-args>) . ' > /dev/null' <bar> if v:shell_error == 0 <bar> edit! <bar> q <bar> endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
