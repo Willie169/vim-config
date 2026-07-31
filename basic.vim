@@ -24,30 +24,8 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-function! s:SudoWrite(filename) abort
-    if empty(a:filename)
-        echoerr 'E499: Empty file name'
-        return 0
-    endif
-    execute '!sudo -v'
-    if v:shell_error != 0
-        echoerr 'sudo authentication failed'
-        return 0
-    endif
-    execute 'silent write !sudo -n tee ' . shellescape(a:filename) . ' >/dev/null'
-    if v:shell_error != 0
-        echoerr 'sudo write failed'
-        return 0
-    endif
-    set nomodified
-    return 1
-endfunction
-command! -nargs=? -complete=file W call <SID>SudoWrite(
-            \ empty(<q-args>) ? expand('%:p') : <q-args>)
-command! -nargs=? -complete=file Wq execute
-            \ '<SID>SudoWrite(' .
-            \ string(empty(<q-args>) ? expand('%:p') : <q-args>) .
-            \ ') ? execute("quit") : ""'
+command! -nargs=? W execute 'write !sudo tee ' . shellescape(empty(<q-args>) ? expand('%:p') : <q-args>) . ' > /dev/null' <bar> edit!
+command! -nargs=? Wq execute 'write !sudo tee ' . shellescape(empty(<q-args>) ? expand('%:p') : <q-args>) . ' > /dev/null' <bar> if v:shell_error == 0 <bar> edit! <bar> q <bar> endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
