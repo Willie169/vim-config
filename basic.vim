@@ -334,10 +334,6 @@ nmap <leader>o zO
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if ! has('nvim')
-    try
-        set undodir=~/.vim_runtime/undodir
-        set undofile
-    catch
-    endtry
+    set undodir=~/.vim_runtime/undodir
+    set undofile
 endif
-
