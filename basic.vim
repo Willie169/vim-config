@@ -102,7 +102,9 @@ set regexpengine=0
 
 " Colorscheme
 set background=dark
-colorscheme torte
+if ! has('nvim')
+    colorscheme torte
+endif
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -320,12 +322,22 @@ endfunction
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Folding
+" [1] https://gist.github.com/lestoni/8c74da455cce3d36eb68
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>r zR
+nmap <leader>o zO
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-try
-    set undodir=~/.vim_undodir
-    set undofile
-catch
-endtry
+if ! has('nvim')
+    try
+        set undodir=~/.vim_runtime/undodir
+        set undofile
+    catch
+    endtry
+endif
 

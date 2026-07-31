@@ -2,7 +2,6 @@
 
 set -e
 rm -rf ~/.vim_runtime || true
-mkdir -p ~/.vim_undodir
 git clone --depth=1 https://github.com/Willie169/vim-config.git ~/.vim_runtime
 cd ~/.vim_runtime/pack/my-plugins/start
 git clone --depth=1 https://github.com/lilydjwg/fcitx.vim.git
