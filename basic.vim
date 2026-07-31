@@ -24,8 +24,8 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-nmap W :w !sudo tee "%" > /dev/null <bar> edit!
-nmap Wq :w !sudo tee "%" > /dev/null <bar> if v:shell_error == 0 <bar> edit! <bar> q <bar> endif
+command! W :w !sudo tee "%" > /dev/null <bar> edit!
+command! Wq :w !sudo tee "%" > /dev/null <bar> if v:shell_error == 0 <bar> edit! <bar> q <bar> endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
