@@ -7,3 +7,6 @@ for f in "$dir"/*.sh; do
 	shellcheck "$f"
 done
 nvim --headless "$dir/basic.vim" -c 'normal! gg=G' -c 'wq'
+echo -e '\n'
+nvim --headless "$dir/vimrc" -c 'normal! gg=G' -c 'wq'
+echo -e '\n'
