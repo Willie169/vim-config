@@ -185,6 +185,7 @@ nnoremap op o<Esc>p
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
+xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
 
 
