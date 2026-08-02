@@ -14,5 +14,6 @@ for repo in fcitx.vim termux-clipboard vim-wayland-clipboard; do
 	git clean -fd
 done
 ln -sf "${HOME}"/.vim_runtime/vimrc "${HOME}"/.vimrc
+# shellcheck disable=2164
 cd "$cwd"
 echo "Updated successfully!"
