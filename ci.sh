@@ -6,7 +6,7 @@ for f in "$dir"/*.sh; do
 	shfmt -w "$f"
 	shellcheck "$f"
 done
-nvim --headless "$dir/basic.vim" -c 'normal! gg=G' -c 'wq'
+nvim --clean --headless "$dir/basic.vim" -c 'normal! gg=G' -c 'wq'
 echo -e '\n'
-nvim --headless "$dir/vimrc" -c 'normal! gg=G' -c 'wq'
+nvim --clean --headless "$dir/vimrc" -c 'normal! gg=G' -c 'wq'
 echo -e '\n'

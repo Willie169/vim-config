@@ -7,6 +7,6 @@ set packpath+=~/.vim_runtime
 source ~/.vim_runtime/basic.vim
 
 try
-    source ~/.vim_runtime/my_configs.vim
+	source ~/.vim_runtime/my_configs.vim
 catch
 endtry
