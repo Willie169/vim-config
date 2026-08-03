@@ -21,9 +21,9 @@ After you have installed the setup, put your customization in `~/.vim_runtime/my
 
 ### Included Plugins
 
-* [fcitx.vim](https://github.com/lilydjwg/fcitx.vim): Keep and restore fcitx state for each buffer separately when leaving/re-entering insert mode or search mode
-* [termux-clipboard](https://github.com/Willie169/termux-clipboard): Integrate Vim '+' register with the Android system clipboard via Termux APIs
-* [vim-wayland-clipboard](https://github.com/jasonccox/vim-wayland-clipboard): Integrate Vim's '+' register with the Wayland system clipboard
+* [fcitx.vim](https://github.com/lilydjwg/fcitx.vim)
+* [termux-clipboard](https://github.com/Willie169/termux-clipboard)
+* [vim-wayland-clipboard](https://github.com/jasonccox/vim-wayland-clipboard)
 
 ### Neovim
 
