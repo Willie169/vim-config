@@ -171,7 +171,7 @@ set si "Smart indent
 set wrap "Wrap lines
 
 " Toggle paste mode on and off
-map <leader>sp :setlocal paste!<cr>
+map sp :setlocal paste!<cr>
 
 nnoremap oo o<Esc>
 nnoremap op o<Esc>p
@@ -278,13 +278,13 @@ nmap <leader>cs :call CleanExtraSpaces()
 setlocal spell
 
 " Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+map ss :setlocal spell!<cr>
 
 " Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sN [s
-map <leader>sa zg
-map <leader>s? z=
+map sn ]s
+map sN [s
+map sa zg
+map s? z=
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
