@@ -190,6 +190,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 " => Delete to black hole register
 """"""""""""""""""""""""""""""
 noremap <leader>d "_d
+noremap <leader>D "_d$
 noremap <leader>p "_dP
 
 
