@@ -2,7 +2,7 @@
 
 set -e
 cwd="$(pwd)"
-cd ~/.vim_runtime
+cd ~/.vim_runtime || exit
 git reset --hard
 git pull --rebase
 git clean -fd
