@@ -192,6 +192,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 noremap <leader>d "_d
 noremap <leader>D "_d$
 noremap <leader>p "_dP
+noremap <leader>X "_x
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
