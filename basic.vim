@@ -395,6 +395,10 @@ endfunction
 nmap <leader>m zM
 nmap <leader>r zR
 
+" Enable folding but unfold on startup
+set foldenable = true
+set foldlevel = 99
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
