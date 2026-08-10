@@ -17,7 +17,7 @@ filetype indent on
 
 " With a map leader it's possible to do extra key combinations
 let mapleader=","
-let maplocalleader="\\"
+let maplocalleader=" "
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -188,11 +188,14 @@ map sp :setlocal paste!<cr>
 
 noremap oo o<Esc>
 noremap op o<Esc>p
-noremap <leader>d "_d
-noremap <leader>D "_d$
-noremap <leader>p "_dP
-noremap <leader>X "_x
-noremap o<leader>p o<Esc>"_dP
+noremap Oo O<Esc>
+noremap OO O<Esc>
+noremap OP O<Esc>p
+noremap Op O<Esc>p
+noremap <localleader>d "_d
+noremap <localleader>D "_d$
+noremap <localleader>p "_dP
+noremap <localleader>x "_x
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
