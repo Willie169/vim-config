@@ -170,12 +170,6 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-" Toggle paste mode on and off
-map sp :setlocal paste!<cr>
-
-nnoremap oo o<Esc>
-nnoremap op o<Esc>p
-
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -187,12 +181,18 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 
 """"""""""""""""""""""""""""""
-" => Delete to black hole register
+" => Delete, append, and paste
 """"""""""""""""""""""""""""""
+" Toggle paste mode on and off
+map sp :setlocal paste!<cr>
+
+noremap oo o<Esc>
+noremap op o<Esc>p
 noremap <leader>d "_d
 noremap <leader>D "_d$
 noremap <leader>p "_dP
 noremap <leader>X "_x
+noremap o<leader>p o<Esc>"_dP
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
