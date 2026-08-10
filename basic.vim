@@ -211,13 +211,39 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>bd :Bclose<cr>
 
 " Close all the buffers
-map <leader>ba :bufdo bd<cr>
+map <leader>ba :bufdo Bclose<cr>
 
 map <S-h> :bprevious<cr>
 map <S-l> :bnext<cr>
+
+" Save and close the current buffer
+function! SaveCloseBuffer(args) abort
+	let file = empty(a:args) ? expand('%:p') : a:args
+	try
+		execute 'write ' . fnameescape(file)
+	catch
+		edit!
+		return
+	endtry
+	Bclose
+endfunction
+command! -nargs=? Bd call SaveCloseBuffer(<q-args>)
+
+" Save and close all the buffers
+function! SaveCloseAllBuffers(args) abort
+	let file = empty(a:args) ? expand('%:p') : a:args
+	try
+		execute 'write ' . fnameescape(file)
+	catch
+		edit!
+		return
+	endtry
+	bufdo Bclose
+endfunction
+command! -nargs=? Ba call SaveCloseAllBuffers(<q-args>)
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
