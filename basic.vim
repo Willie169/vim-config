@@ -233,17 +233,33 @@ endfunction
 command! -nargs=? Bd call SaveCloseBuffer(<q-args>)
 
 " Save and close all the buffers
-function! SaveCloseAllBuffers(args) abort
-	let file = empty(a:args) ? expand('%:p') : a:args
+function! SaveCloseAllBuffers() abort
 	try
-		execute 'write ' . fnameescape(file)
+		wall
 	catch
 		edit!
 		return
 	endtry
 	bufdo Bclose
 endfunction
-command! -nargs=? Ba call SaveCloseAllBuffers(<q-args>)
+command! Ba call SaveCloseAllBuffers()
+
+" Save and close all the buffers and quit
+function! SaveCloseAllBuffersQuit() abort
+	try
+		wall
+	catch
+		edit!
+		return
+	endtry
+	try
+		bufdo Bclose
+	catch
+		return
+	endtry
+	quit
+endfunction
+command! Bq call SaveCloseAllBuffersQuit()
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
