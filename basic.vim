@@ -17,7 +17,7 @@ filetype indent on
 
 " With a map leader it's possible to do extra key combinations
 let mapleader=","
-let maplocalleader=";"
+let maplocalleader=" "
 
 " Fast saving
 nmap <leader>w :w!<cr>
