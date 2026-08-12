@@ -179,6 +179,14 @@ set wrap "Wrap lines
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
+vnoremap <M-down> :m '>+1<CR>gv=gv
+vnoremap <M-up> :m '<-2<CR>gv=gv
+
+vnoremap > >gv
+vnoremap <M-.> >
+vnoremap < <gv
+vnoremap <M-,> <
+
 
 """"""""""""""""""""""""""""""
 " => Delete, append, and paste
