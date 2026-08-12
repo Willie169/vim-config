@@ -195,27 +195,9 @@ vnoremap <M-,> <
 map sp :setlocal paste!<cr>
 
 noremap oo o<Esc>
-noremap o1 o<Esc>
-noremap o2 o<cr><Esc>
-noremap o3 o<cr><cr><Esc>
-noremap o4 o<cr><cr><cr><Esc>
-noremap o5 o<cr><cr><cr><cr><Esc>
-noremap o6 o<cr><cr><cr><cr><cr><Esc>
-noremap o7 o<cr><cr><cr><cr><cr><cr><Esc>
-noremap o8 o<cr><cr><cr><cr><cr><cr><cr><Esc>
-noremap o9 o<cr><cr><cr><cr><cr><cr><cr><cr><Esc>
 noremap op o<Esc>p
 noremap Oo O<Esc>
 noremap OO O<Esc>
-noremap O1 O<Esc>
-noremap O2 O<cr><Esc>
-noremap O3 O<cr><cr><Esc>
-noremap O4 O<cr><cr><cr><Esc>
-noremap O5 O<cr><cr><cr><cr><Esc>
-noremap O6 O<cr><cr><cr><cr><cr><Esc>
-noremap O7 O<cr><cr><cr><cr><cr><cr><Esc>
-noremap O8 O<cr><cr><cr><cr><cr><cr><cr><Esc>
-noremap O9 O<cr><cr><cr><cr><cr><cr><cr><cr><Esc>
 noremap OP O<Esc>p
 noremap Op O<Esc>p
 noremap <localleader>d "_d
