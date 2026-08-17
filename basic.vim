@@ -167,7 +167,9 @@ set shiftwidth=4
 set tabstop=4
 
 " sh
-autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
+if ! has('nvim')
+    autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
+endif
 
 set ai "Auto indent
 set si "Smart indent
