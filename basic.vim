@@ -166,6 +166,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" sh
+autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
+
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
