@@ -21,7 +21,6 @@ After you have installed the setup, put your customization in `~/.vim_runtime/my
 
 ### Included Plugins
 
-* [fcitx.vim](https://github.com/lilydjwg/fcitx.vim)
 * [termux-clipboard](https://github.com/Willie169/termux-clipboard)
 * [vim-wayland-clipboard](https://github.com/jasonccox/vim-wayland-clipboard)
 
