@@ -422,4 +422,4 @@ endif
 "    https://github.com/lilydjwg/fcitx.vim
 "    Rime
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vim.g.fcitx5_rime = 1
+let g:fcitx5_rime = 1
