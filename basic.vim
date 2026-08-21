@@ -415,3 +415,11 @@ if ! has('nvim')
 	set undodir=~/.vim_runtime/undodir
 	set undofile
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => fcitx.vim
+"    https://github.com/lilydjwg/fcitx.vim
+"    Rime
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+vim.g.fcitx5_rime = 1
