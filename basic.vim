@@ -162,16 +162,11 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
 
-" filetype
-autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType typescript setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
 
 set ai "Auto indent
 set si "Smart indent
