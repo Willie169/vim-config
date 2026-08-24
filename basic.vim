@@ -167,6 +167,7 @@ set shiftwidth=2
 set tabstop=2
 
 autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType json setlocal shiftwidth=2 softtabstop=2 expandtab
 
 set ai "Auto indent
 set si "Smart indent
