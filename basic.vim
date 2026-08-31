@@ -167,7 +167,6 @@ set shiftwidth=2
 set tabstop=2
 
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 expandtab
 
 set ai "Auto indent
 set si "Smart indent
