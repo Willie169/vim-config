@@ -204,8 +204,7 @@ noremap OP O<Esc>p
 noremap Op O<Esc>p
 noremap <localleader>d "_d
 noremap <localleader>D "_d$
-noremap <localleader>p "_dp
-noremap <localleader>P "_dP
+noremap <localleader>p "_dP
 noremap <localleader>x "_x
 
 
