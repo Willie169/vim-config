@@ -337,12 +337,6 @@ setlocal spell
 " Pressing ,ss will toggle and untoggle spell checking
 map ss :setlocal spell!<cr>
 
-" Shortcuts using <leader>
-map sn ]s
-map sN [s
-map sa zg
-map s? z=
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
