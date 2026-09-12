@@ -339,7 +339,7 @@ map ss :setlocal spell!<cr>
 
 " Shortcuts
 map sn ]S
-map sN [S
+map sm [S
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
