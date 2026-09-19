@@ -326,8 +326,7 @@ fun! CleanExtraSpaces()
 	call setreg('/', old_query)
 endfun
 
-nmap <leader>cs :call CleanExtraSpaces()
-
+nmap <silent> <leader>s :call CleanExtraSpaces()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
