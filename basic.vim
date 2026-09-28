@@ -29,7 +29,7 @@ if ! has('nvim')
 	command! -nargs=? Wq execute 'write !sudo tee ' . shellescape(empty(<q-args>) ? expand('%:p') : <q-args>) . ' > /dev/null' <bar> if v:shell_error == 0 <bar> edit! <bar> q <bar> endif
 endif
 
-set shellcmdflag = "-ic"
+set shellcmdflag=-ic
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
