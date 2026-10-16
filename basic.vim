@@ -413,3 +413,11 @@ if ! has('nvim')
 	set undodir=~/.vim_runtime/undodir
 	set undofile
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => File types
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+autocmd BufNewFile,BufRead *.TEX set filetype=tex
+
