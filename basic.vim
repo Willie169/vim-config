@@ -198,16 +198,14 @@ vnoremap <M-,> <
 " Toggle paste mode on and off
 map sp :setlocal paste!<cr>
 
-noremap oo o<Esc>
-noremap op o<Esc>p
-noremap Oo O<Esc>
-noremap OO O<Esc>
-noremap OP O<Esc>p
-noremap Op O<Esc>p
-noremap <localleader>d "_d
-noremap <localleader>D "_d$
-noremap <localleader>p "_dP
+noremap <localleader>o o<Esc>
+noremap <localleader>O O<Esc>
+nnoremap <localleader>p o<Esc>p
+nnoremap <localleader>P O<Esc>p
 noremap <localleader>x "_x
+vnoremap <localleader>d "_d
+vnoremap <localleader>D "_d$
+vnoremap <localleader>p "_dP
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
