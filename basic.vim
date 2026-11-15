@@ -203,8 +203,8 @@ noremap <localleader>O O<Esc>
 nnoremap <localleader>p o<Esc>p
 nnoremap <localleader>P O<Esc>p
 noremap <localleader>x "_x
-vnoremap <localleader>d "_d
-vnoremap <localleader>D "_d$
+noremap <localleader>d "_d
+noremap <localleader>D "_d$
 vnoremap <localleader>p "_dP
 
 
