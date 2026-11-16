@@ -198,6 +198,7 @@ vnoremap <M-,> <
 " Toggle paste mode on and off
 map sp :setlocal paste!<cr>
 
+noremap H d^
 noremap <localleader>o o<Esc>
 noremap <localleader>O O<Esc>
 nnoremap <localleader>p o<Esc>p
@@ -205,6 +206,7 @@ nnoremap <localleader>P O<Esc>p
 noremap <localleader>x "_x
 noremap <localleader>d "_d
 noremap <localleader>D "_d$
+noremap <localleader>H "_d^
 vnoremap <localleader>p "_dP
 
 
