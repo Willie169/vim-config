@@ -193,7 +193,7 @@ vnoremap <M-,> <
 
 
 """"""""""""""""""""""""""""""
-" => Delete, append, and paste
+" => Delete, yank, append, and paste
 """"""""""""""""""""""""""""""
 " Toggle paste mode on and off
 map sp :setlocal paste!<cr>
@@ -207,9 +207,10 @@ noremap <localleader>O O<Esc>
 nnoremap <localleader>p o<Esc>p
 nnoremap <localleader>P O<Esc>p
 noremap <localleader>x "_x
+noremap <localleader>X "_X
 noremap <localleader>d "_d
 vnoremap <localleader>p "_dP
-
+vnoremap <localleader>P "_dp
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
