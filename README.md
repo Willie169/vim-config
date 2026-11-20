@@ -23,6 +23,7 @@ After you have installed the setup, put your customization in `~/.vim_runtime/my
 
 * [fcitx.vim](https://github.com/lilydjwg/fcitx.vim)
 * [termux-clipboard](https://github.com/Willie169/termux-clipboard)
+* [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-wayland-clipboard](https://github.com/jasonccox/vim-wayland-clipboard)
 
 ### Neovim
